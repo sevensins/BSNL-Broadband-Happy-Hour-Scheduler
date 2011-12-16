@@ -1,0 +1,24 @@
+Provide the Broadband/PPoE dialer name used to connect to your ISP
+
+Provide the Password used to connect to your ISP
+
+
+
+Process p = new Process();
+            p.StartInfo.FileName = "cmd.exe";
+            p.StartInfo.Arguments = "/C" + "RASDIAL \"Surf Up\" /disconnect ";
+            p.StartInfo.CreateNoWindow = true;
+            p.StartInfo.UseShellExecute = false;
+            p.StartInfo.RedirectStandardOutput = true;
+            p.Start();
+
+            StreamReader sr = p.StandardOutput;
+            string op = sr.ReadToEnd().ToString();
+            if (op.Contains("Command completed successfully"))
+            {
+                string show_op = "Disconnected successfully at " + DateTime.Now.ToString();
+                textBox1.Text = show_op;
+            }
+
+
+

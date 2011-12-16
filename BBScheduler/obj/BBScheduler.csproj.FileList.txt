@@ -1,0 +1,8 @@
+bin\Debug\BBScheduler.exe
+bin\Debug\BBScheduler.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BBScheduler.Form1.resources
+obj\Debug\BBScheduler.Properties.Resources.resources
+obj\Debug\BBScheduler.csproj.GenerateResource.Cache
+obj\Debug\BBScheduler.exe
+obj\Debug\BBScheduler.pdb
